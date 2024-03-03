@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas vindas!</title>
+
+    
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        
+        body 
+        {
+            margin: 0;
+            background-color: #FFF8E7;
+            font-family: 'Nunito';
+        }
+        #header
+        {
+            background-color: #121212;
+            height: 4vw;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            z-index: 2;
+        }
+        #header h1
+        {
+            margin-top: 0;
+            padding-top: 0.5vw;
+            font-size: 2.5vw;
+        }
+
+        #content
+        {
+            width: 50vw;
+            height: 40vw;
+            background-color: #f5f5f5;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 2vw;
+            box-shadow: 0 0 2vw rgb(199, 199, 199);
+        }
+
+        #content-img
+        {
+            width: auto;
+            height: 10vw;
+            border-radius: 1vw;
+            position: relative;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 1vw rgb(58, 78, 255);
+        }
+
+        #content p
+        {
+            text-align: center;
+            position: relative;
+            font-weight: bold;
+            top: 2vw;
+            font-size: 1.5vw;
+        }
+
+        #content-items
+        {
+            display: inline-flex;
+        }
+        
+        #classified-items
+        {
+            border-radius: 5vw;
+            background-color: #563fda;
+            position: relative;
+            top: 2vw;
+            left: 2vw;
+            margin-right: 4vw;
+            cursor: pointer;
+        }
+
+        #classified-items p
+        {
+            position: absolute;
+            text-transform: uppercase;
+            top: 8.8vw;
+        }
+
+        #classified-items img
+        {
+            width: 1.5vw;
+            height: auto;
+            transform: scale(4);
+            margin: 4vw;
+            filter: invert(1);
+        }
+
+        .content-row
+        {
+            position: relative;
+            top: 15%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1> BOAS VINDAS </h1>
+    </div>
+
+    <div id="content">
+        <img id="content-img" src="https://cdn.pixabay.com/animation/2022/12/25/06/53/06-53-16-8_512.gif">
+        <p> Olá! <br> Por favor, escolha uma opção abaixo. </p>
+
+        <div class="content-row">
+
+            <div id="content-items">
+                <div id="classified-items">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1311/1311095.png">
+                    <p> Itens verificados </p>
+                </div>
+            </div>
+
+            <div id="content-items">
+                <div id="classified-items">
+                    <img src="https://www.shareicon.net/data/2015/09/30/109567_basket_512x512.png">
+                    <p> Mercado e Produtos </p>
+                </div>
+            </div>
+
+            <div id="content-items">
+                <div id="classified-items">
+                    <img src="https://cdn.icon-icons.com/icons2/2715/PNG/512/user_circle_gear_icon_172132.png">
+                    <p> Minha Conta </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
